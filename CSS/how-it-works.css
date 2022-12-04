@@ -1,6 +1,6 @@
 .container {  display: grid;
   grid-template-columns: 0.4fr 2.1fr 1.2fr 0.4fr;
-  grid-template-rows: 0.4fr auto auto auto auto 9.9fr 1fr;
+  grid-template-rows: 0.4fr auto auto auto auto auto 1fr;
   grid-auto-columns: 1fr;
   gap: 0em 0em;
   grid-auto-flow: row;
@@ -11,24 +11,17 @@
     ". card card ."
     ". more-text more-text ."
     ". card2 card2 ."
-    "footer footer footer footer";
+    "footer footer footer footer"
 }
 
-.navbar { grid-area: navbar; }
-
-.focus {  display: grid;
-  grid-template-columns: 1.4fr 0.6fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "focus-text focus-pic";
-  grid-area: focus;
+.navbar { 
+  grid-area: navbar;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
-.focus-text { grid-area: focus-text; }
-
-.focus-pic { grid-area: focus-pic; }
 
 .how-it-works { 
   grid-area: how-it-works; 
@@ -45,7 +38,7 @@
   grid-area: card;
   display: flex;
   border-radius: 2em;
-  background-color: blue;
+  background-color:rgb(8, 80, 248);
 }
 
 .cardtext{
@@ -84,7 +77,8 @@
   grid-area: card2; 
   display: flex;
   border-radius: 2em;
-  background-color: blue;
+  background-color:  rgb(8, 80, 248);
+  margin-bottom: 4em;
 }
 
 .card2text{
@@ -93,5 +87,6 @@
   padding: 6em;
 }
 
-
-.footer { grid-area: footer; }
+.footer {
+  grid-area: footer;
+}
